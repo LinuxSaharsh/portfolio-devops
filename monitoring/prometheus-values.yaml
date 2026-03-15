@@ -1,0 +1,12 @@
+# Values for Prometheus Stack Deployment
+grafana:
+  enabled: true
+  adminPassword: "admin"
+
+prometheus:
+  prometheusSpec:
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
+
+alertmanager:
+  enabled: true
